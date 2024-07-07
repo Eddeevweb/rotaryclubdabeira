@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: opacity 0.8s ease; /* Transição para efeito de fade */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Para que as colunas quebrem em linhas em dispositivos móveis */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.col {
+    flex: 1 1 30%; /* Ajuste de flex para dispositivos móveis */
+    margin: 0 10px;
+    max-width: calc(33.33% - 20px); /* Garante 3 colunas por linha */
+}
+
+.news-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.news-box img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news-link {
+    text-decoration: none;
+    color: inherit;
+}
