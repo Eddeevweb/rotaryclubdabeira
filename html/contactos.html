@@ -793,6 +793,43 @@
 			}
 		}
 	</style>
+	 <style>
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form, .contact-info, .location {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+		.contact-info{
+			width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; box-sizing: border-box; margin-bottom: 20px; text-align: center;
+		}
+		aside{
+			display: flex;
+			flex-direction: column;
+			width: 45%;
+			justify-content: center;
+		}
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        @media (max-width: 768px) {
+            .contact-form, .contact-info, .location {
+                width: 100%;
+            }
+			aside{
+				width: 100%;
+			}
+        }
+    </style>
 	<script type="application/json"
 		class="joomla-script-options new">{"data":{"breakpoints":{"tablet":991,"mobile":480},"header":{"stickyOffset":"100"}},"joomla.jtext":{"ERROR":"Erro","MESSAGE":"Mensagem","NOTICE":"Aviso","WARNING":"Alerta","JCLOSE":"Fechar","JOK":"Aceitar","JOPEN":"Abrir"},"system.paths":{"root":"","rootFull":"https://www.rclparquedasnacoes.pt/","base":"","baseFull":"https://www.rclparquedasnacoes.pt/"},"csrf.token":"5f0ae6c07f9218de035a17f672678b2e","plg_system_schedulerunner":{"interval":300}}</script>
 	<script src="/js/core.min.js"></script>
@@ -935,7 +972,87 @@
 						<div class="sp-column "></div>
 					</div>
 				</div>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsam vero accusamus est deleniti, ut facere beatae harum expedita perspiciatis similique sed tempora officiis quae ratione quasi assumenda soluta totam.
+
+				<section id="sp-section-1"></section>
+				<section id="sp-main-body">
+					<div id="sp-page-builder" class="sp-page-builder page-1" x-data="easystoreProductList">
+						<div class="page-content" x-data="easystoreProductDetails">
+							<section id="section-id-40f23c25-0418-4c7b-a23d-2a94b3de8662" class="sppb-section">
+								<div class="sppb-row-container">
+									<div class="sppb-row">
+										<div class="sppb-col-md-12" id="column-wrap-id-334005e9-127d-43bb-9238-727322f5c067">
+											<div id="column-id-334005e9-127d-43bb-9238-727322f5c067" class="sppb-column">
+												<div class="sppb-column-addons">
+													<div id="sppb-addon-wrapper-0b5561d1-cf95-4ec1-95e1-10364a17c6d4" class="sppb-addon-wrapper addon-root-heading">
+														<div id="sppb-addon-0b5561d1-cf95-4ec1-95e1-10364a17c6d4" class="clearfix sppb-wow fadeInLeft" data-sppb-wow-duration="400ms" data-sppb-wow-delay="400ms">
+															<div class="sppb-addon sppb-addon-header">
+																<h3 class="sppb-addon-title">Contactos</h3>
+															</div>
+														</div>
+													</div>
+													<div id="section-id-1402b04a-845f-4611-9b80-e4912df3fe1c" class="sppb-section sppb-wow fadeInUp sppb-section-content-center" data-sppb-wow-duration="400ms" data-sppb-wow-delay="400ms">
+														<div class="sppb-container-inner">
+															<div class="contact-container">
+																<!-- Contact Form -->
+																<div class="contact-form">
+																	<form>
+																		<label for="name">Nome:</label>
+																		<input type="text" id="name" name="name" required>
+																		
+																		<label for="email">Email (opcional):</label>
+																		<input type="email" id="email" name="email">
+																		
+																		<label for="subject">Assunto:</label>
+																		<input type="text" id="subject" name="subject" required>
+																		
+																		<label for="message">Mensagem:</label>
+																		<textarea id="message" name="message" rows="4" required></textarea>
+																		
+																		<input style="display: block; width: 200px; padding: 10px; margin: 10px auto; background-color: #F7A81B; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"
+																		onmouseover="this.style.backgroundColor='#885600'; this.style.transform='scale(1.05)';"
+																		onmouseout="this.style.backgroundColor='#F7A81B'; this.style.transform='scale(1)';" type="submit" value="Enviar">
+																	</form>
+																</div>
+
+																<aside style="text-align: left;">
+																	<!-- Contact Info -->
+																	<div class="sppb-container-inner">
+																		<div class="contact-info">
+																			<h2>Contacte-nos</h2>
+																			<p>Telefone: +258 84 409 7588</p>
+																			<p>Email: rotaryclubdabeira@gmail.com</p>
+																		</div>
+																	</div>
+																	<!-- Location Info -->
+																	<div class="sppb-container-inner">
+																		<div class="contact-info" class="location">
+																			<h2>Localize-nos</h2>
+																			<p>Lunamar<br>Avenida Do Presidente Cravero Lopes<br>Beira, 2100, Moçambique</p>
+																		</div>
+																	</div>
+																</aside>
+																
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+			<section id="sp-section-1">
+
+
+				<div class="row">
+					<div id="sp-title" class="col-lg-12 ">
+						<div class="sp-column "></div>
+					</div>
+				</div>
+
 			</section>
 
 			<footer id="sp-footer">
@@ -1053,3 +1170,4 @@
 </body>
 
 </html>
+
