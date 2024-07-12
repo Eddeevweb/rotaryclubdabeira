@@ -833,6 +833,7 @@
 	<script type="application/json"
 		class="joomla-script-options new">{"data":{"breakpoints":{"tablet":991,"mobile":480},"header":{"stickyOffset":"100"}},"joomla.jtext":{"ERROR":"Erro","MESSAGE":"Mensagem","NOTICE":"Aviso","WARNING":"Alerta","JCLOSE":"Fechar","JOK":"Aceitar","JOPEN":"Abrir"},"system.paths":{"root":"","rootFull":"https://www.rclparquedasnacoes.pt/","base":"","baseFull":"https://www.rclparquedasnacoes.pt/"},"csrf.token":"5f0ae6c07f9218de035a17f672678b2e","plg_system_schedulerunner":{"interval":300}}</script>
 	<script src="/js/core.min.js"></script>
+	<script src="/js/mensagenswhat.js"></script>
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/jquery-noconflict.min.js"></script>
 	<script src="/js/alert.min.js" type="module"></script>
@@ -992,25 +993,37 @@
 													</div>
 													<div id="section-id-1402b04a-845f-4611-9b80-e4912df3fe1c" class="sppb-section sppb-wow fadeInUp sppb-section-content-center" data-sppb-wow-duration="400ms" data-sppb-wow-delay="400ms">
 														<div class="sppb-container-inner">
+
+															<div class="contact-container">
+																<div class="sppb-container-inner">
+																	<div class="contact-info" style="box-shadow: 0 0px 8px rgba(0,0,0,0)">
+																		<h2>Atenção</h2>
+																		<p>Todos os nossos botões e formulários, são encaminhados para o whatsapp</p>
+																		<p>Se não tiver o whatsapp instalado no seu computador acesse o site pelo seu celular ou use o E-Mail na caixa abaixo.</p>
+																	</div>
+																</div>
+															</div>
 															<div class="contact-container">
 																<!-- Contact Form -->
 																<div class="contact-form">
-																	<form netlify>
+																	<form action="">
 																		<label for="name">Nome:</label>
-																		<input type="text" id="name" name="name" required>
+																		<input type="text" placeholder="ex.: Maria Clara Braga Adriano" id="name" name="name" required>
 																		
-																		<label for="email">Email (opcional):</label>
-																		<input type="email" id="email" name="email">
+																		<label for="email">Email:</label>
+																		<input type="email" placeholder="ex.: rotaryclubdabeira@gmail.com" id="email" name="email" required>
 																		
 																		<label for="subject">Assunto:</label>
-																		<input type="text" id="subject" name="subject" required>
+																		<input type="text" placeholder="ex.: Proposta de parceria" id="subject" name="subject" required>
 																		
 																		<label for="message">Mensagem:</label>
-																		<textarea id="message" name="message" rows="4" required></textarea>
+																		<textarea id="message" placeholder="Faça da sua mensagem a magia do Rotary" name="message" rows="4" required></textarea>
+																		<div>
+																			<input style="display: block; width: 200px; padding: 10px; margin: 10px auto; background-color: #F7A81B; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"
+																			onmouseover="this.style.backgroundColor='#885600'; this.style.transform='scale(1.05)';"
+																			onmouseout="this.style.backgroundColor='#F7A81B'; this.style.transform='scale(1)';" type="submit"  value="Enviar" onclick="gotowhatsapp()">
+																		</div>
 																		
-																		<input style="display: block; width: 200px; padding: 10px; margin: 10px auto; background-color: #F7A81B; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"
-																		onmouseover="this.style.backgroundColor='#885600'; this.style.transform='scale(1.05)';"
-																		onmouseout="this.style.backgroundColor='#F7A81B'; this.style.transform='scale(1)';" type="submit" value="Enviar">
 																	</form>
 																</div>
 
